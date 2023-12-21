@@ -9,7 +9,7 @@ std::vector <int> get_covering_set(std::vector <Segment> segments)
 {
     std::sort(segments.begin(), segments.end(),[] (Segment seg1 , Segment seg2) -> bool { return seg1.second < seg2.second; });
     std::vector <int> result;
-    int temp{};
+    int temp{-1};
 
     for (auto & seg : segments)
     {
